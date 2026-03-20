@@ -1,0 +1,77 @@
+# Dependências e builds
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+package-lock.json  # ou yarn.lock se usares yarn – mas geralmente commit lockfile sim, ignora se preferires
+dist/
+build/
+*.tsbuildinfo
+
+# Ambiente e segredos (crucial!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env.backup
+config/secrets.js
+
+# Prisma-specific
+prisma/dev.db*
+prisma/migrations/*/.DS_Store  # se usares Mac
+prisma/.cache/  # raro, mas às vezes aparece
+
+# Logs e temporários
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Editor e OS files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Testes e coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Builds e caches
+.next/          # se usares Next.js no futuro
+out/
+.cache/
+.tmp/
+temp/
+
+# TypeScript / ESLint / Prettier caches
+.eslintcache
+.prettierignore  # não commitar, mas ignora se existir
+tsconfig.tsbuildinfo
+
+# Outros comuns em projetos Node/Prisma
+*.bak
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Se tiveres frontend React separado (adicione no frontend/.gitignore)
+# /build
+# /.next
+# /.expo   # se mobile
+# /android/.gradle
+# etc.
